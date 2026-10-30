@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ohnna — games and tools</title>
+<meta name="description" content="Games and tools for Windows, the Steam Deck, Fire TV and the browser, built with a crew of AIs.">
+<meta name="theme-color" content="#09080D">
+<meta property="og:title" content="Ohnna — games and tools">
+<meta property="og:description" content="Games and tools for Windows, the Steam Deck, Fire TV and the browser, built with a crew of AIs.">
+<meta property="og:image" content="/img/olympia-shot.jpg">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}body{margin:0;background:#09080D;-webkit-font-smoothing:antialiased}
+a{color:#F2EFF7}a:hover{color:#FFFFFF}
+@media (max-width: 640px){.navlinks a.navlink{display:none}.filters{flex-wrap:nowrap!important;overflow-x:auto;max-width:100%;scrollbar-width:none}.filters button{flex:0 0 auto}}
+</style>
+</head>
+<body>
+<div style="min-height: 100vh; background: #09080D; color: #F2EFF7; font-family: 'Geist', system-ui, sans-serif; font-size: 16px; line-height: 1.6">
+
+  <header style="border-bottom: 1px solid #1C1A24">
+    <nav aria-label="Main" style="max-width: 1240px; margin: 0 auto; padding: 14px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+      <a href="#top" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #F2EFF7; font-weight: 600; font-size: 18px; letter-spacing: -0.02em; min-height: 44px">
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5" fill="none" stroke="#FF5FA8" stroke-width="1.6"></circle><path d="M12 12 m-5.5 0 a5.5 5.5 0 1 1 5.5 5.5 a3 3 0 1 1 3 -3" fill="none" stroke="#FF5FA8" stroke-width="1.6" stroke-linecap="round"></path></svg>
+        ohnna
+      </a>
+      <div class="navlinks" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2px; font-size: 14px">
+        <a class="navlink" href="#work" style="color: #A09BAE; text-decoration: none; padding: 12px 14px">Work</a>
+        <a class="navlink" href="#crew" style="color: #A09BAE; text-decoration: none; padding: 12px 14px">How I build</a>
+        <a class="navlink" href="#log" style="color: #A09BAE; text-decoration: none; padding: 12px 14px">Log</a>
+        <a class="navlink" href="https://github.com/Cyberhex1" style="color: #A09BAE; text-decoration: none; padding: 12px 14px">GitHub ↗</a>
+        <a href="#contact" style="color: #F2EFF7; text-decoration: none; padding: 10px 18px; margin-left: 8px; border: 1px solid #2E2B38; border-radius: 999px">Say hi</a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="top" style="position: relative; overflow: hidden; border-bottom: 1px solid #1C1A24">
+    <svg aria-hidden="true" viewBox="0 0 1440 420" preserveAspectRatio="xMidYMax slice" style="position: absolute; left: 0; bottom: 0; width: 100%; height: 420px">
+      <g stroke="#B9A2FF" stroke-opacity="0.14" stroke-width="1">
+        <line x1="120" y1="0" x2="100" y2="120"></line><line x1="310" y1="40" x2="290" y2="160"></line><line x1="520" y1="10" x2="500" y2="130"></line><line x1="760" y1="60" x2="740" y2="180"></line><line x1="980" y1="0" x2="960" y2="120"></line><line x1="1190" y1="30" x2="1170" y2="150"></line><line x1="1380" y1="70" x2="1360" y2="190"></line><line x1="660" y1="120" x2="645" y2="210"></line><line x1="1080" y1="110" x2="1065" y2="200"></line>
+      </g>
+      <g fill="#100E17">
+        <rect x="0" y="250" width="110" height="170"></rect><rect x="100" y="200" width="90" height="220"></rect><rect x="190" y="280" width="130" height="140"></rect><rect x="320" y="230" width="70" height="190"></rect><rect x="390" y="300" width="160" height="120"></rect><rect x="550" y="250" width="90" height="170"></rect><rect x="640" y="310" width="140" height="110"></rect><rect x="780" y="220" width="80" height="200"></rect><rect x="860" y="290" width="150" height="130"></rect><rect x="1010" y="240" width="100" height="180"></rect><rect x="1110" y="190" width="80" height="230"></rect><rect x="1190" y="270" width="130" height="150"></rect><rect x="1320" y="230" width="120" height="190"></rect>
+      </g>
+      <g opacity="0.75">
+        <rect x="118" y="220" width="6" height="8" fill="#FF5FA8"></rect><rect x="134" y="250" width="6" height="8" fill="#FFD74A"></rect><rect x="160" y="236" width="6" height="8" fill="#B9A2FF"></rect><rect x="336" y="250" width="6" height="8" fill="#4EF0C0"></rect><rect x="566" y="270" width="6" height="8" fill="#FF5FA8"></rect><rect x="600" y="300" width="6" height="8" fill="#FFD74A"></rect><rect x="796" y="240" width="6" height="8" fill="#B9A2FF"></rect><rect x="826" y="276" width="6" height="8" fill="#FF5FA8"></rect><rect x="1030" y="262" width="6" height="8" fill="#4EF0C0"></rect><rect x="1126" y="210" width="6" height="8" fill="#FFD74A"></rect><rect x="1160" y="246" width="6" height="8" fill="#FF5FA8"></rect><rect x="1340" y="252" width="6" height="8" fill="#B9A2FF"></rect>
+      </g>
+      <line x1="0" y1="419" x2="1440" y2="419" stroke="#FF5FA8" stroke-opacity="0.6" stroke-width="2"></line>
+    </svg>
+    <div aria-hidden="true" style="position: absolute; right: -120px; top: 40px; width: 640px; height: 620px; background: radial-gradient(closest-side, rgba(255,95,168,0.16), rgba(255,95,168,0))"></div>
+
+    <div style="position: relative; max-width: 1240px; margin: 0 auto; padding: 104px 32px 148px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+      <div style="flex: 999 1 520px; min-width: 0">
+        <a href="#log" style="display: inline-flex; align-items: center; gap: 10px; padding: 6px 14px 6px 8px; border: 1px solid #2E2B38; border-radius: 999px; background: rgba(17,16,25,0.7); text-decoration: none; color: #CBC6D6; font-size: 13px; min-height: 32px">
+          <span style="display: inline-flex; align-items: center; gap: 6px; background: rgba(78,240,192,0.12); color: #4EF0C0; padding: 2px 8px; border-radius: 999px; font-family: 'Geist Mono', monospace; font-size: 11px"><span style="width: 6px; height: 6px; border-radius: 50%; background: #4EF0C0"></span>NEW</span>
+          Seven releases in one night →
+        </a>
+        <h1 style="margin: 28px 0 0; font-size: clamp(44px, 6vw, 80px); line-height: 1.02; letter-spacing: -0.045em; font-weight: 600">I make games and tools with a crew of <span style="color: #FF5FA8">AIs</span>.</h1>
+        <p style="margin: 24px 0 0; max-width: 540px; font-size: 18px; color: #A09BAE">Apps for Windows, the Steam Deck and Fire TV, games for the browser, and one rescued Flash game. Twelve projects, from shipped to sketched, and the board shows where each one stands.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 36px; font-size: 15px">
+          <a href="#work" style="display: inline-flex; align-items: center; min-height: 46px; padding: 0 22px; background: #F2EFF7; color: #09080D; text-decoration: none; font-weight: 500; border-radius: 999px">See the work</a>
+          <a href="https://zeroroll.pages.dev" style="display: inline-flex; align-items: center; min-height: 46px; padding: 0 22px; border: 1px solid #2E2B38; color: #F2EFF7; text-decoration: none; font-weight: 500; border-radius: 999px">Play Roll Zero0 ↗</a>
+        </div>
+      </div>
+
+      <aside aria-label="Project status board" style="flex: 1 1 380px; min-width: 0; background: rgba(17,16,25,0.72); backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,0.09); border-radius: 20px; padding: 20px 22px 8px">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px">
+          <h2 style="margin: 0; font-size: 15px; font-weight: 500">Status</h2>
+          <span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #8A859C">updated Oct 29</span>
+        </div>
+        <ul style="list-style: none; margin: 0; padding: 0; font-size: 14px">
+          <li style="display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-top: 1px solid #1F1D28"><span>Olympia</span><span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #4EF0C0">● v1.0.0</span></li>
+          <li style="display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-top: 1px solid #1F1D28"><span>The Hook-Up</span><span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #4EF0C0">● v1.0</span></li>
+          <li style="display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-top: 1px solid #1F1D28"><span>TokTV</span><span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #4EF0C0">● v1.0</span></li>
+          <li style="display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-top: 1px solid #1F1D28"><span>WishlistMarket</span><span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #4EF0C0">● v1.0.0</span></li>
+          <li style="display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-top: 1px solid #1F1D28"><span>JobSweep</span><span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #4EF0C0">● v0.0.1</span></li>
+          <li style="display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-top: 1px solid #1F1D28"><span>StreamFix</span><span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #4EF0C0">● v0.2.0</span></li>
+          <li style="display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-top: 1px solid #1F1D28"><span>Roll Zero0</span><span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #4EF0C0">● v1.0.0</span></li>
+          <li style="display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-top: 1px solid #1F1D28"><span>Comfy Studio</span><span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #4EF0C0">● v1.0</span></li>
+          <li style="display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-top: 1px solid #1F1D28"><span>Candied</span><span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #FFD74A">● Chapter 1</span></li>
+          <li style="display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-top: 1px solid #1F1D28"><span>SysPeek</span><span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #FFD74A">● Release prep</span></li>
+          <li style="display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-top: 1px solid #1F1D28"><span>LocalFaves</span><span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #FFD74A">● Building</span></li>
+          <li style="display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-top: 1px solid #1F1D28"><span>ForkLift</span><span style="font-family: 'Geist Mono', monospace; font-size: 12px; color: #B9A2FF">○ Launching soon</span></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section id="work" style="max-width: 1240px; margin: 0 auto; padding: 104px 32px 112px">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 36px">
+      <div>
+        <p style="margin: 0 0 12px; font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #8A859C">01 — WORK</p>
+        <h2 style="margin: 0; font-size: 44px; line-height: 1.05; letter-spacing: -0.04em; font-weight: 600">Things I've made</h2>
+      </div>
+      <div class="filters" role="group" aria-label="Filter projects" style="display: inline-flex; flex-wrap: wrap; padding: 3px; background: #111019; border: 1px solid #22202B; border-radius: 24px; font-size: 14px">
+        <button type="button" data-filter="all" aria-pressed="true" style="min-height: 44px; padding: 0 16px; border-radius: 999px; border: 0; font: inherit; cursor: pointer; background: #F2EFF7; color: #09080D; font-weight: 500">All</button>
+          <button type="button" data-filter="download" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border-radius: 999px; border: 0; font: inherit; cursor: pointer; background: transparent; color: #A09BAE">Downloads</button>
+          <button type="button" data-filter="games" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border-radius: 999px; border: 0; font: inherit; cursor: pointer; background: transparent; color: #A09BAE">Games</button>
+          <button type="button" data-filter="apps" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border-radius: 999px; border: 0; font: inherit; cursor: pointer; background: transparent; color: #A09BAE">Apps</button>
+          <button type="button" data-filter="web" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border-radius: 999px; border: 0; font: inherit; cursor: pointer; background: transparent; color: #A09BAE">Web</button>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px">
+
+      <div class="proj" data-cats="apps download" style="display: contents">
+        <article style="background: #111019; border: 1px solid #22202B; border-radius: 22px; padding: 10px; display: flex; flex-direction: column">
+          <div style="height: 236px; border-radius: 14px; overflow: hidden; background: #E8D4AC"><img src="/img/olympia-shot.jpg" alt="Olympia: a low-poly 3D island with buildings, paths and a status card for a Claude session at work" style="display: block; width: 100%; height: 100%; object-fit: cover"></div>
+          <div style="padding: 18px 14px 12px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <img src="/img/olympia-icon.png" alt="" style="width: 32px; height: 32px; border-radius: 9px">
+              <h3 style="margin: 0; flex: 1 1 auto; font-size: 21px; font-weight: 600; letter-spacing: -0.02em">Olympia</h3>
+              <a href="https://github.com/Cyberhex1/olympia" title="Olympia on GitHub" style="display: inline-flex; align-items: center; gap: 6px; font-family: 'Geist Mono', monospace; font-size: 11px; color: #4EF0C0; border: 1px solid rgba(78,240,192,0.35); border-radius: 999px; padding: 3px 9px; text-decoration: none"><span style="width: 6px; height: 6px; border-radius: 50%; background: #4EF0C0"></span>v1.0.0 ↗</a>
+            </div>
+            <p style="margin: 0; font-size: 15px; color: #A09BAE">A living 3D island of your Claude Code work. Every project gets a building, every session walks to the workshop for its job, and anything waiting on you waves a red "!".</p>
+            <p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 12px; color: #8A859C">Windows widget · Electron + three.js · Stays on your PC</p>
+            <p style="margin: 0; font-size: 12px; color: #8A859C">Windows 10/11. Not code-signed yet, so SmartScreen asks once. <a href="/syspeek#unsigned" style="color: #CBC6D6">What to do</a> · Not affiliated with Anthropic.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 12px; font-size: 14px">
+              <a href="/dl/olympia/windows" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; background: #F2EFF7; color: #09080D; text-decoration: none; font-weight: 500; border-radius: 999px"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2 V11 M4 7.5 L8 11.5 L12 7.5 M2.5 14 H13.5" fill="none" stroke="#09080D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>Windows</a>
+              <a href="/dl/olympia/portable" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #2E2B38; color: #F2EFF7; text-decoration: none; font-weight: 500; border-radius: 999px">Portable .zip</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="proj" data-cats="games web" style="display: contents">
+        <article style="background: #111019; border: 1px solid #22202B; border-radius: 22px; padding: 10px; display: flex; flex-direction: column">
+          <div role="img" aria-label="Roll Zero0: a tactical map, a story prompt and a successful dice roll" style="position: relative; height: 236px; border-radius: 14px; overflow: hidden; background: #061A17">
+            <div aria-hidden="true" style="position: absolute; inset: 0; background: radial-gradient(60% 80% at 28% 45%, rgba(78,240,192,0.22), rgba(78,240,192,0))"></div>
+            <svg aria-hidden="true" width="196" height="196" viewBox="0 0 196 196" style="position: absolute; left: 18px; top: 20px">
+              <g stroke="#4EF0C0" stroke-opacity="0.22" stroke-width="1"><line x1="0" y1="0" x2="196" y2="0"></line><line x1="0" y1="39" x2="196" y2="39"></line><line x1="0" y1="78" x2="196" y2="78"></line><line x1="0" y1="117" x2="196" y2="117"></line><line x1="0" y1="156" x2="196" y2="156"></line><line x1="0" y1="195" x2="196" y2="195"></line><line x1="0" y1="0" x2="0" y2="196"></line><line x1="39" y1="0" x2="39" y2="196"></line><line x1="78" y1="0" x2="78" y2="196"></line><line x1="117" y1="0" x2="117" y2="196"></line><line x1="156" y1="0" x2="156" y2="196"></line><line x1="195" y1="0" x2="195" y2="196"></line></g>
+              <rect x="79" y="79" width="37" height="37" fill="#4EF0C0" fill-opacity="0.14"></rect><rect x="118" y="40" width="37" height="37" fill="#FF5FA8" fill-opacity="0.12"></rect>
+              <path d="M58 136 L97 136 L97 98" fill="none" stroke="#4EF0C0" stroke-width="1.5" stroke-dasharray="4 4"></path>
+              <circle cx="58" cy="136" r="12" fill="#4EF0C0"></circle><circle cx="136" cy="58" r="12" fill="#FF5FA8"></circle><circle cx="175" cy="136" r="10" fill="none" stroke="#FFD74A" stroke-width="2"></circle>
+            </svg>
+            <div style="position: absolute; right: 16px; top: 20px; width: 158px; background: rgba(6,12,11,0.88); border: 1px solid rgba(78,240,192,0.28); border-radius: 12px; padding: 10px 12px; font-size: 12px; line-height: 1.45; color: #CFF5EA">A goblin bursts from the reeds. Roll to dodge.</div>
+            <div style="position: absolute; right: 16px; bottom: 20px; display: flex; align-items: center; gap: 8px; background: #4EF0C0; color: #03130F; border-radius: 10px; padding: 8px 12px; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 500"><svg width="16" height="16" viewBox="0 0 20 20" aria-hidden="true"><polygon points="10,1 18.5,5.5 18.5,14.5 10,19 1.5,14.5 1.5,5.5" fill="none" stroke="#03130F" stroke-width="1.6"></polygon><polygon points="10,5 14.5,13 5.5,13" fill="none" stroke="#03130F" stroke-width="1.3"></polygon></svg>d20 · 17 · Dodged</div>
+          </div>
+          <div style="padding: 18px 14px 12px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <span style="width: 32px; height: 32px; border-radius: 9px; background: #0B2A27; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><polygon points="10,1 18.5,5.5 18.5,14.5 10,19 1.5,14.5 1.5,5.5" fill="none" stroke="#4EF0C0" stroke-width="1.6"></polygon><polygon points="10,5 14.5,13 5.5,13" fill="none" stroke="#4EF0C0" stroke-width="1.3"></polygon></svg></span>
+              <h3 style="margin: 0; flex: 1 1 auto; font-size: 21px; font-weight: 600; letter-spacing: -0.02em">Roll Zero0</h3>
+              <a href="https://github.com/Cyberhex1/ZeroRoll" title="Roll Zero0 on GitHub" style="display: inline-flex; align-items: center; gap: 6px; font-family: 'Geist Mono', monospace; font-size: 11px; color: #4EF0C0; border: 1px solid rgba(78,240,192,0.35); border-radius: 999px; padding: 3px 9px; text-decoration: none"><span style="width: 6px; height: 6px; border-radius: 50%; background: #4EF0C0"></span>v1.0.0 ↗</a>
+            </div>
+            <p style="margin: 0; font-size: 15px; color: #A09BAE">An AI game master for tabletop adventures in your browser, across 15 campaign genres with real 5e dice odds.</p>
+            <p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 12px; color: #8A859C">Web game · AI · Cloudflare Pages</p>
+            <p style="margin: 0; font-size: 12px; color: #8A859C">Fan preservation project. The game belongs to its original creators.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 12px; font-size: 14px">
+              <a href="https://zeroroll.pages.dev" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; background: #F2EFF7; color: #09080D; text-decoration: none; font-weight: 500; border-radius: 999px">Play ↗</a>
+              <a href="/roll-zero0" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #2E2B38; color: #F2EFF7; text-decoration: none; font-weight: 500; border-radius: 999px">Case study</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="proj" data-cats="games download" style="display: contents">
+        <article style="background: #111019; border: 1px solid #22202B; border-radius: 22px; padding: 10px; display: flex; flex-direction: column">
+          <div role="img" aria-label="The Hook-Up: a restored 2007 game window with three save slots, a Saved confirmation, and Windows and Steam Deck tags" style="position: relative; height: 236px; border-radius: 14px; overflow: hidden; background: #1A0920">
+            <div aria-hidden="true" style="position: absolute; inset: 0; background: radial-gradient(70% 80% at 80% 20%, rgba(232,80,160,0.28), rgba(232,80,160,0))"></div>
+            <div style="position: absolute; left: 22px; right: 22px; top: 22px; background: #26102F; border: 1px solid #4B2259; border-radius: 12px; overflow: hidden">
+              <div style="height: 28px; display: flex; align-items: center; justify-content: space-between; padding: 0 12px; border-bottom: 1px solid #3A1A45; font-family: 'Geist Mono', monospace; font-size: 10px; color: #E2B7E8"><span>The Hook-Up · 2007</span><span>restored</span></div>
+              <div style="padding: 10px 12px; display: flex; flex-direction: column; gap: 6px; font-size: 12px">
+                <div style="display: flex; justify-content: space-between; align-items: center; background: #3A1746; border: 1px solid #F06DB4; border-radius: 8px; padding: 7px 10px; color: #FCE3F1"><span>Slot 1</span><span style="font-family: 'Geist Mono', monospace; font-size: 10px; color: #FF9CC8">selected</span></div>
+                <div style="display: flex; justify-content: space-between; align-items: center; background: #2E1338; border-radius: 8px; padding: 7px 10px; color: #D9BFE0"><span>Slot 2</span><span style="font-family: 'Geist Mono', monospace; font-size: 10px; color: #A98BB2">empty</span></div>
+                <div style="display: flex; justify-content: space-between; align-items: center; background: #2E1338; border-radius: 8px; padding: 7px 10px; color: #D9BFE0"><span>Autosave</span><span style="font-family: 'Geist Mono', monospace; font-size: 10px; color: #A98BB2">every morning</span></div>
+              </div>
+            </div>
+            <div style="position: absolute; right: 30px; top: 132px; display: flex; align-items: center; gap: 6px; background: #4EF0C0; color: #03130F; border-radius: 9px; padding: 6px 10px; font-family: 'Geist Mono', monospace; font-size: 11px; font-weight: 500"><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6.5 L5 9 L10 3" fill="none" stroke="#03130F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>Saved</div>
+            <div style="position: absolute; left: 22px; bottom: 18px; display: flex; gap: 6px; font-family: 'Geist Mono', monospace; font-size: 10px">
+              <span style="border: 1px solid #5A2E66; color: #E7C6EE; border-radius: 999px; padding: 3px 8px">Windows</span>
+              <span style="border: 1px solid #5A2E66; color: #E7C6EE; border-radius: 999px; padding: 3px 8px">Steam Deck</span>
+              <span style="border: 1px solid #5A2E66; color: #E7C6EE; border-radius: 999px; padding: 3px 8px">Controller</span>
+            </div>
+          </div>
+          <div style="padding: 18px 14px 12px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <img src="/img/hookup-icon.png" alt="" style="width: 32px; height: 32px; border-radius: 9px">
+              <h3 style="margin: 0; flex: 1 1 auto; font-size: 21px; font-weight: 600; letter-spacing: -0.02em">The Hook-Up</h3>
+              <a href="https://github.com/Cyberhex1/the-hook-up" title="The Hook-Up on GitHub" style="display: inline-flex; align-items: center; gap: 6px; font-family: 'Geist Mono', monospace; font-size: 11px; color: #4EF0C0; border: 1px solid rgba(78,240,192,0.35); border-radius: 999px; padding: 3px 9px; text-decoration: none"><span style="width: 6px; height: 6px; border-radius: 50%; background: #4EF0C0"></span>v1.0 ↗</a>
+            </div>
+            <p style="margin: 0; font-size: 15px; color: #A09BAE">I restored a lost 2007 Flash game: reverse-engineered its save system, fixed the bugs that froze it, and shipped it as a standalone app.</p>
+            <p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 12px; color: #8A859C">Game preservation · ActionScript 2 · Ruffle + Electron</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 12px; font-size: 14px">
+              <a href="/dl/the-hook-up/windows" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; background: #F2EFF7; color: #09080D; text-decoration: none; font-weight: 500; border-radius: 999px"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2 V11 M4 7.5 L8 11.5 L12 7.5 M2.5 14 H13.5" fill="none" stroke="#09080D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>Windows</a>
+              <a href="/dl/the-hook-up/steamdeck" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #2E2B38; color: #F2EFF7; text-decoration: none; font-weight: 500; border-radius: 999px">Steam Deck</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="proj" data-cats="apps download" style="display: contents">
+        <article style="background: #111019; border: 1px solid #22202B; border-radius: 22px; padding: 10px; display: flex; flex-direction: column">
+          <div role="img" aria-label="JobSweep: ranked job matches with fit meters, a tailored resume and an application waiting for review" style="position: relative; height: 236px; border-radius: 14px; overflow: hidden; background: #100D07">
+            <div aria-hidden="true" style="position: absolute; inset: 0; background: radial-gradient(70% 70% at 30% 20%, rgba(214,176,92,0.22), rgba(214,176,92,0))"></div>
+            <div style="position: absolute; left: 22px; right: 22px; top: 22px; background: #19150D; border: 1px solid #3A3120; border-radius: 12px; overflow: hidden">
+              <div style="height: 28px; display: flex; align-items: center; justify-content: space-between; padding: 0 12px; border-bottom: 1px solid #2E2718; font-family: 'Geist Mono', monospace; font-size: 10px; color: #D9C59A"><span>JobSweep · best matches</span><span style="color: #4EF0C0">local AI</span></div>
+              <div style="display: flex; align-items: center; gap: 10px; padding: 9px 12px; border-bottom: 1px solid #2E2718; font-size: 12px; color: #F3E9D2"><span style="flex: 1 1 auto">Frontend Developer</span><span style="width: 56px; height: 5px; background: #2E2718; border-radius: 4px"><span style="display: block; width: 92%; height: 5px; background: #D6B05C; border-radius: 4px"></span></span><span style="font-family: 'Geist Mono', monospace; font-size: 10px; color: #4EF0C0; width: 52px; text-align: right">tailored</span></div>
+              <div style="display: flex; align-items: center; gap: 10px; padding: 9px 12px; border-bottom: 1px solid #2E2718; font-size: 12px; color: #F3E9D2"><span style="flex: 1 1 auto">QA Tester</span><span style="width: 56px; height: 5px; background: #2E2718; border-radius: 4px"><span style="display: block; width: 78%; height: 5px; background: #D6B05C; border-radius: 4px"></span></span><span style="font-family: 'Geist Mono', monospace; font-size: 10px; color: #FFD74A; width: 52px; text-align: right">review</span></div>
+              <div style="display: flex; align-items: center; gap: 10px; padding: 9px 12px; font-size: 12px; color: #F3E9D2"><span style="flex: 1 1 auto">Data Analyst</span><span style="width: 56px; height: 5px; background: #2E2718; border-radius: 4px"><span style="display: block; width: 64%; height: 5px; background: #D6B05C; border-radius: 4px"></span></span><span style="font-family: 'Geist Mono', monospace; font-size: 10px; color: #A79C84; width: 52px; text-align: right">queued</span></div>
+            </div>
+            <div style="position: absolute; right: 22px; bottom: 16px; display: flex; align-items: center; gap: 8px; background: #19150D; border: 1px solid #3A3120; border-radius: 10px; padding: 6px 10px; font-size: 11px; color: #F3E9D2">Stop for my review<span style="width: 24px; height: 13px; border-radius: 999px; background: #D6B05C; display: flex; justify-content: flex-end; padding: 2px; box-sizing: border-box"><span style="width: 9px; height: 9px; border-radius: 50%; background: #19150D"></span></span></div>
+          </div>
+          <div style="padding: 18px 14px 12px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <img src="/img/jobsweep-icon.png" alt="" style="width: 32px; height: 32px; border-radius: 9px">
+              <h3 style="margin: 0; flex: 1 1 auto; font-size: 21px; font-weight: 600; letter-spacing: -0.02em">JobSweep</h3>
+              <a href="https://github.com/Cyberhex1/jobsweep-app" title="JobSweep on GitHub" style="display: inline-flex; align-items: center; gap: 6px; font-family: 'Geist Mono', monospace; font-size: 11px; color: #4EF0C0; border: 1px solid rgba(78,240,192,0.35); border-radius: 999px; padding: 3px 9px; text-decoration: none"><span style="width: 6px; height: 6px; border-radius: 50%; background: #4EF0C0"></span>v0.0.1 ↗</a>
+            </div>
+            <p style="margin: 0; font-size: 15px; color: #A09BAE">Takes the grind out of job hunting. It pulls openings from many job sites, ranks how well each one fits you, tailors your resume and cover letter, and can fill in the application for you.</p>
+            <p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 12px; color: #8A859C">Windows app · Electron + React · Ollama</p>
+            <p style="margin: 0; font-size: 12px; color: #8A859C">Local-first: a free local model does the writing and your data stays on your PC. Not code-signed yet, so Windows asks once. <a href="/syspeek#unsigned" style="color: #CBC6D6">What to do</a></p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 12px; font-size: 14px">
+              <a href="/dl/jobsweep/windows" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; background: #F2EFF7; color: #09080D; text-decoration: none; font-weight: 500; border-radius: 999px"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2 V11 M4 7.5 L8 11.5 L12 7.5 M2.5 14 H13.5" fill="none" stroke="#09080D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>Windows</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="proj" data-cats="apps download" style="display: contents">
+        <article style="background: #111019; border: 1px solid #22202B; border-radius: 22px; padding: 10px; display: flex; flex-direction: column">
+          <div role="img" aria-label="StreamFix verdict: missing frames split between the PC, the network and the Deck, with the likely cause" style="position: relative; height: 236px; border-radius: 14px; overflow: hidden; background: #08111D">
+            <div aria-hidden="true" style="position: absolute; inset: 0; background: radial-gradient(70% 70% at 30% 30%, rgba(111,182,255,0.22), rgba(111,182,255,0))"></div>
+            <div style="position: absolute; left: 22px; right: 22px; top: 22px; background: #0F1A2B; border: 1px solid #22344F; border-radius: 12px; overflow: hidden">
+              <div style="height: 28px; display: flex; align-items: center; justify-content: space-between; padding: 0 12px; border-bottom: 1px solid #1C2B42; font-family: 'Geist Mono', monospace; font-size: 10px; color: #A6BDDA"><span>StreamFix · verdict</span><span>Host ⇄ Client</span></div>
+              <div style="padding: 12px">
+                <p style="margin: 0 0 8px; font-size: 11px; color: #A6BDDA">Frames short of expected</p>
+                <div style="display: flex; height: 12px; border-radius: 6px; overflow: hidden; gap: 2px"><div style="flex: 2 1 0; background: #6FB6FF"></div><div style="flex: 6 1 0; background: #FF5FA8"></div><div style="flex: 1.5 1 0; background: #FFD74A"></div></div>
+                <div style="display: flex; gap: 14px; margin-top: 8px; font-family: 'Geist Mono', monospace; font-size: 10px; color: #C7DAF2"><span><span style="color: #6FB6FF">■</span> PC</span><span><span style="color: #FF5FA8">■</span> Network</span><span><span style="color: #FFD74A">■</span> Deck</span></div>
+                <div style="margin-top: 14px; background: rgba(255,95,168,0.1); border: 1px solid rgba(255,95,168,0.3); border-radius: 8px; padding: 8px 10px; font-size: 11px; color: #FFD0E6">Likely cause: Deck on 2.4 GHz Wi-Fi</div>
+                <div style="margin-top: 6px; background: rgba(78,240,192,0.08); border: 1px solid rgba(78,240,192,0.25); border-radius: 8px; padding: 8px 10px; font-size: 11px; color: #BDF7E5">Try next: switch to 5 GHz, lower bitrate</div>
+              </div>
+            </div>
+          </div>
+          <div style="padding: 18px 14px 12px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <img src="/img/streamfix-icon.png" alt="" style="width: 32px; height: 32px; border-radius: 9px">
+              <h3 style="margin: 0; flex: 1 1 auto; font-size: 21px; font-weight: 600; letter-spacing: -0.02em">StreamFix</h3>
+              <a href="https://github.com/Cyberhex1/Streamfix" title="StreamFix on GitHub" style="display: inline-flex; align-items: center; gap: 6px; font-family: 'Geist Mono', monospace; font-size: 11px; color: #4EF0C0; border: 1px solid rgba(78,240,192,0.35); border-radius: 999px; padding: 3px 9px; text-decoration: none"><span style="width: 6px; height: 6px; border-radius: 50%; background: #4EF0C0"></span>v0.2.0 ↗</a>
+            </div>
+            <p style="margin: 0; font-size: 15px; color: #A09BAE">Find out why your game stream stutters. It measures the stream from your PC and your Steam Deck, counts the missing frames and tells you what to try next.</p>
+            <p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 12px; color: #8A859C">Steam Remote Play · Moonlight/Apollo · C# / .NET</p>
+            <p style="margin: 0; font-size: 12px; color: #8A859C">Recommends only. It never changes your settings.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 12px; font-size: 14px">
+              <a href="/dl/streamfix/windows" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; background: #F2EFF7; color: #09080D; text-decoration: none; font-weight: 500; border-radius: 999px"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2 V11 M4 7.5 L8 11.5 L12 7.5 M2.5 14 H13.5" fill="none" stroke="#09080D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>PC</a>
+              <a href="/dl/streamfix/steamdeck" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #2E2B38; color: #F2EFF7; text-decoration: none; font-weight: 500; border-radius: 999px">Steam Deck</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="proj" data-cats="apps download" style="display: contents">
+        <article style="background: #111019; border: 1px solid #22202B; border-radius: 22px; padding: 10px; display: flex; flex-direction: column">
+          <div role="img" aria-label="TokTV on a TV: a vertical video marked LIVE beside a chat panel, with a TV remote" style="position: relative; height: 236px; border-radius: 14px; overflow: hidden; background: #08080F">
+            <div aria-hidden="true" style="position: absolute; inset: 0; background: radial-gradient(50% 70% at 25% 40%, rgba(76,224,255,0.18), rgba(76,224,255,0))"></div>
+            <div aria-hidden="true" style="position: absolute; inset: 0; background: radial-gradient(50% 70% at 80% 70%, rgba(255,70,120,0.16), rgba(255,70,120,0))"></div>
+            <div style="position: absolute; left: 26px; right: 64px; top: 20px; height: 160px; background: #04040A; border: 5px solid #1E1E2B; border-radius: 12px; display: flex; overflow: hidden">
+              <div style="flex: 1 1 auto; display: flex; align-items: center; justify-content: center; gap: 10px">
+                <div style="display: flex; flex-direction: column; gap: 4px; align-items: center; font-size: 9px; color: #6F6F86"><span>▲</span><span>▼</span></div>
+                <div style="position: relative; width: 78px; height: 138px; border-radius: 8px; background: #2A1532; overflow: hidden">
+                  <div style="position: absolute; left: 14px; top: 34px; width: 50px; height: 50px; border-radius: 50%; background: #4CE0FF; opacity: 0.55"></div>
+                  <div style="position: absolute; left: 28px; top: 54px; width: 44px; height: 44px; border-radius: 50%; background: #FF4678; opacity: 0.6"></div>
+                  <span style="position: absolute; left: 6px; top: 6px; background: #FF2D55; color: #FFFFFF; font-family: 'Geist Mono', monospace; font-size: 8px; font-weight: 500; padding: 1px 5px; border-radius: 4px">LIVE</span>
+                  <div style="position: absolute; left: 6px; right: 6px; bottom: 8px; height: 4px; background: rgba(255,255,255,0.5); border-radius: 2px"></div>
+                </div>
+              </div>
+              <div style="flex: 0 0 86px; border-left: 1px solid #1A1A26; padding: 10px 8px; display: flex; flex-direction: column; gap: 6px">
+                <div style="height: 6px; width: 80%; background: #2A2A3C; border-radius: 3px"></div>
+                <div style="height: 6px; width: 60%; background: #2A2A3C; border-radius: 3px"></div>
+                <div style="height: 6px; width: 90%; background: #4CE0FF; opacity: 0.6; border-radius: 3px"></div>
+                <div style="height: 6px; width: 70%; background: #2A2A3C; border-radius: 3px"></div>
+                <div style="height: 6px; width: 50%; background: #FF4678; opacity: 0.6; border-radius: 3px"></div>
+                <div style="height: 6px; width: 85%; background: #2A2A3C; border-radius: 3px"></div>
+              </div>
+            </div>
+            <div aria-hidden="true" style="position: absolute; left: 50%; margin-left: -44px; top: 186px; width: 44px; height: 8px; background: #1E1E2B; border-radius: 0 0 4px 4px"></div>
+            <svg aria-hidden="true" width="36" height="74" viewBox="0 0 36 74" style="position: absolute; right: 18px; bottom: 18px"><rect x="1" y="1" width="34" height="72" rx="14" fill="#16161F" stroke="#2C2C3C"></rect><circle cx="18" cy="24" r="11" fill="none" stroke="#4CE0FF" stroke-width="1.5"></circle><circle cx="18" cy="24" r="4" fill="#4CE0FF"></circle><circle cx="11" cy="48" r="3" fill="#3A3A4C"></circle><circle cx="25" cy="48" r="3" fill="#3A3A4C"></circle><circle cx="18" cy="60" r="3" fill="#FF4678"></circle></svg>
+          </div>
+          <div style="padding: 18px 14px 12px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <img src="/img/toktv-icon.png" alt="" style="width: 32px; height: 32px; border-radius: 9px">
+              <h3 style="margin: 0; flex: 1 1 auto; font-size: 21px; font-weight: 600; letter-spacing: -0.02em">TokTV</h3>
+              <a href="https://github.com/Cyberhex1/TokTV" title="TokTV on GitHub" style="display: inline-flex; align-items: center; gap: 6px; font-family: 'Geist Mono', monospace; font-size: 11px; color: #4EF0C0; border: 1px solid rgba(78,240,192,0.35); border-radius: 999px; padding: 3px 9px; text-decoration: none"><span style="width: 6px; height: 6px; border-radius: 50%; background: #4EF0C0"></span>v1.0 ↗</a>
+            </div>
+            <p style="margin: 0; font-size: 15px; color: #A09BAE">TikTok for the big screen, built for the remote. For You, Following, search and full TikTok LIVE with chat, all on a Fire TV stick with just the D-pad.</p>
+            <p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 12px; color: #8A859C">Fire TV app · Java · about 50 KB</p>
+            <p style="margin: 0; font-size: 12px; color: #8A859C">Sideload with the Downloader app. Unofficial, not affiliated with TikTok.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 12px; font-size: 14px">
+              <a href="/dl/toktv/apk" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; background: #F2EFF7; color: #09080D; text-decoration: none; font-weight: 500; border-radius: 999px"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2 V11 M4 7.5 L8 11.5 L12 7.5 M2.5 14 H13.5" fill="none" stroke="#09080D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>APK</a>
+              <a href="https://github.com/Cyberhex1/TokTV" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #2E2B38; color: #F2EFF7; text-decoration: none; font-weight: 500; border-radius: 999px">How to install</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="proj" data-cats="games" style="display: contents">
+        <article style="background: #111019; border: 1px solid #22202B; border-radius: 22px; padding: 10px; display: flex; flex-direction: column">
+          <div style="height: 236px; border-radius: 14px; overflow: hidden; background: #241328"><img src="/img/candied-cover.jpg" alt="Candied cover: the Edge Community at dusk, a lamplit town on a cliff with the Megacity skyline behind" style="display: block; width: 100%; height: 100%; object-fit: cover"></div>
+          <div style="padding: 18px 14px 12px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <img src="/img/candied-icon.jpg" alt="" style="width: 32px; height: 32px; border-radius: 9px; object-fit: cover">
+              <h3 style="margin: 0; flex: 1 1 auto; font-size: 21px; font-weight: 600; letter-spacing: -0.02em">Candied</h3>
+              <a href="https://github.com/Cyberhex1/Candied" title="Candied on GitHub" style="display: inline-flex; align-items: center; gap: 6px; font-family: 'Geist Mono', monospace; font-size: 11px; color: #FFD74A; border: 1px solid rgba(255,215,74,0.35); border-radius: 999px; padding: 3px 9px; text-decoration: none"><span style="width: 6px; height: 6px; border-radius: 50%; background: #FFD74A"></span>v1.0 ↗</a>
+            </div>
+            <p style="margin: 0; font-size: 15px; color: #A09BAE">A narrative RPG in a cozy-but-dark solarpunk world, lit like a rainy neon street. Every choice has a good, neutral, evil or chaotic answer, and the town remembers.</p>
+            <p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 12px; color: #8A859C"><span style="color: #FFD74A">Chapter 1 in progress</span> · Narrative RPG · HTML5 + Three.js</p>
+            <p style="margin: 0; font-size: 12px; color: #8A859C">Or self-host your own copy on Cloudflare.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 12px; font-size: 14px">
+              <a href="https://candied.pages.dev" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; background: #F2EFF7; color: #09080D; text-decoration: none; font-weight: 500; border-radius: 999px">Play ↗</a>
+              <a href="#log" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #2E2B38; color: #F2EFF7; text-decoration: none; font-weight: 500; border-radius: 999px">Dev log</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="proj" data-cats="web" style="display: contents">
+        <article style="background: #111019; border: 1px solid #22202B; border-radius: 22px; padding: 10px; display: flex; flex-direction: column">
+          <div style="height: 236px; border-radius: 14px; overflow: hidden; background: #E3E6E8"><img src="/img/wishlist-shot.png" alt="WishlistMarket: a store-style page of shopping lists, each showing its top pick and price" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: top left"></div>
+          <div style="padding: 18px 14px 12px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <img src="/img/wishlist-icon.png" alt="" style="width: 32px; height: 32px; border-radius: 9px">
+              <h3 style="margin: 0; flex: 1 1 auto; font-size: 21px; font-weight: 600; letter-spacing: -0.02em">WishlistMarket</h3>
+              <a href="https://github.com/Cyberhex1/wishlishmarket" title="WishlistMarket on GitHub" style="display: inline-flex; align-items: center; gap: 6px; font-family: 'Geist Mono', monospace; font-size: 11px; color: #4EF0C0; border: 1px solid rgba(78,240,192,0.35); border-radius: 999px; padding: 3px 9px; text-decoration: none"><span style="width: 6px; height: 6px; border-radius: 50%; background: #4EF0C0"></span>v1.0.0 ↗</a>
+            </div>
+            <p style="margin: 0; font-size: 15px; color: #A09BAE">Shopping research as clean, comparable lists, built by AI shoppers you hire with your own key or a free local model. Every pick is link-checked.</p>
+            <p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 12px; color: #8A859C">Web app · Cloudflare Pages + D1</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 12px; font-size: 14px">
+              <a href="https://wishlistmarket.pages.dev" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; background: #F2EFF7; color: #09080D; text-decoration: none; font-weight: 500; border-radius: 999px">Visit ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="proj" data-cats="web" style="display: contents">
+        <article style="background: #111019; border: 1px solid #22202B; border-radius: 22px; padding: 10px; display: flex; flex-direction: column">
+          <div role="img" aria-label="Comfy Studio: a prompt box, two generated images and a 3D model ready to export" style="position: relative; height: 236px; border-radius: 14px; overflow: hidden; background: #07160F">
+            <div aria-hidden="true" style="position: absolute; inset: 0; background: radial-gradient(70% 70% at 50% 0%, rgba(110,231,170,0.2), rgba(110,231,170,0))"></div>
+            <div style="position: absolute; left: 18px; right: 18px; top: 18px; height: 36px; display: flex; align-items: center; gap: 8px; background: #0E2318; border: 1px solid #1F4A33; border-radius: 10px; padding: 0 6px 0 12px; font-size: 12px; color: #BFEFD4"><span style="flex: 1 1 auto">a cozy cabin at dusk, watercolor</span><span style="background: #6EE7AA; color: #062014; font-weight: 500; border-radius: 7px; padding: 4px 10px; font-size: 11px">Generate</span></div>
+            <div style="position: absolute; left: 18px; right: 18px; top: 66px; bottom: 18px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+              <svg aria-hidden="true" viewBox="0 0 100 150" preserveAspectRatio="xMidYMid slice" style="width: 100%; height: 100%; border-radius: 10px"><rect width="100" height="150" fill="#F6B57A"></rect><circle cx="68" cy="52" r="16" fill="#FFE2A8"></circle><polygon points="0,110 34,64 64,110" fill="#7A4E7E"></polygon><polygon points="30,110 70,70 100,110" fill="#5B3A66"></polygon><rect y="108" width="100" height="42" fill="#2E2A3A"></rect><rect x="40" y="94" width="20" height="16" fill="#8B5A3C"></rect><rect x="47" y="100" width="6" height="6" fill="#FFD27A"></rect></svg>
+              <svg aria-hidden="true" viewBox="0 0 100 150" preserveAspectRatio="xMidYMid slice" style="width: 100%; height: 100%; border-radius: 10px"><rect width="100" height="150" fill="#9CC9E8"></rect><circle cx="28" cy="40" r="12" fill="#FFF6D8"></circle><polygon points="0,112 40,58 76,112" fill="#4E7A62"></polygon><polygon points="40,112 78,72 100,112" fill="#3B5E4B"></polygon><rect y="110" width="100" height="40" fill="#2F4A3A"></rect><rect x="56" y="96" width="22" height="16" fill="#A0704C"></rect><rect x="63" y="101" width="6" height="6" fill="#FFE39A"></rect></svg>
+              <div style="border-radius: 10px; background: #0E2318; border: 1px solid #1F4A33; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px">
+                <svg aria-hidden="true" width="56" height="56" viewBox="0 0 56 56"><polygon points="28,6 50,18 50,40 28,52 6,40 6,18" fill="#F6B57A" fill-opacity="0.35" stroke="#6EE7AA" stroke-width="1.5"></polygon><polyline points="6,18 28,30 50,18" fill="none" stroke="#6EE7AA" stroke-width="1.5"></polyline><line x1="28" y1="30" x2="28" y2="52" stroke="#6EE7AA" stroke-width="1.5"></line></svg>
+                <span style="font-family: 'Geist Mono', monospace; font-size: 10px; color: #6EE7AA; border: 1px solid #1F4A33; border-radius: 6px; padding: 2px 6px">.GLB</span>
+              </div>
+            </div>
+          </div>
+          <div style="padding: 18px 14px 12px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <img src="/img/comfy-icon.png" alt="" style="width: 32px; height: 32px; border-radius: 9px">
+              <h3 style="margin: 0; flex: 1 1 auto; font-size: 21px; font-weight: 600; letter-spacing: -0.02em">Comfy Studio</h3>
+              <a href="https://github.com/Cyberhex1/comfystudio" title="Comfy Studio on GitHub" style="display: inline-flex; align-items: center; gap: 6px; font-family: 'Geist Mono', monospace; font-size: 11px; color: #4EF0C0; border: 1px solid rgba(78,240,192,0.35); border-radius: 999px; padding: 3px 9px; text-decoration: none"><span style="width: 6px; height: 6px; border-radius: 50%; background: #4EF0C0"></span>v1.0 ↗</a>
+            </div>
+            <p style="margin: 0; font-size: 15px; color: #A09BAE">A friendly web studio for ComfyUI that turns prompts into images and images into colored 3D models, all on your own PC.</p>
+            <p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 12px; color: #8A859C">Web app · ComfyUI · Hunyuan3D · Gemini</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 12px; font-size: 14px">
+              <a href="https://github.com/Cyberhex1/comfystudio" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; background: #F2EFF7; color: #09080D; text-decoration: none; font-weight: 500; border-radius: 999px">Get the code ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="proj" data-cats="web" style="display: contents">
+        <article style="background: #111019; border: 1px solid #22202B; border-radius: 22px; padding: 10px; display: flex; flex-direction: column">
+          <div role="img" aria-label="ForkLift: a grid of project cards, one highlighted with a Fork button" style="position: relative; height: 236px; border-radius: 14px; overflow: hidden; background: #12110C">
+            <div aria-hidden="true" style="position: absolute; inset: 0; background: radial-gradient(60% 70% at 50% 50%, rgba(245,200,106,0.16), rgba(245,200,106,0))"></div>
+            <div style="position: absolute; left: 22px; right: 22px; top: 26px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
+              <div style="height: 82px; background: #1B1A13; border: 1px solid #2C2A1E; border-radius: 10px; padding: 10px; box-sizing: border-box"><div style="width: 60%; height: 6px; background: #3A3727; border-radius: 4px"></div><div style="width: 85%; height: 4px; background: #2C2A1E; border-radius: 4px; margin-top: 10px"></div><div style="width: 70%; height: 4px; background: #2C2A1E; border-radius: 4px; margin-top: 6px"></div></div>
+              <div style="height: 82px; background: #231F12; border: 1px solid #F5C86A; border-radius: 10px; padding: 10px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between"><div style="width: 60%; height: 6px; background: #F5C86A; border-radius: 4px"></div><span style="display: inline-flex; align-items: center; gap: 5px; font-family: 'Geist Mono', monospace; font-size: 10px; color: #F8DCA0"><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><circle cx="3" cy="2.5" r="1.6" fill="none" stroke="#F8DCA0" stroke-width="1.2"></circle><circle cx="9" cy="2.5" r="1.6" fill="none" stroke="#F8DCA0" stroke-width="1.2"></circle><circle cx="6" cy="9.5" r="1.6" fill="none" stroke="#F8DCA0" stroke-width="1.2"></circle><path d="M3 4 V5 Q3 6.5 6 6.5 Q9 6.5 9 5 V4 M6 6.5 V8" fill="none" stroke="#F8DCA0" stroke-width="1.2"></path></svg>Fork</span></div>
+              <div style="height: 82px; background: #1B1A13; border: 1px solid #2C2A1E; border-radius: 10px; padding: 10px; box-sizing: border-box"><div style="width: 50%; height: 6px; background: #3A3727; border-radius: 4px"></div><div style="width: 80%; height: 4px; background: #2C2A1E; border-radius: 4px; margin-top: 10px"></div><div style="width: 60%; height: 4px; background: #2C2A1E; border-radius: 4px; margin-top: 6px"></div></div>
+              <div style="height: 82px; background: #1B1A13; border: 1px solid #2C2A1E; border-radius: 10px; padding: 10px; box-sizing: border-box"><div style="width: 55%; height: 6px; background: #3A3727; border-radius: 4px"></div><div style="width: 75%; height: 4px; background: #2C2A1E; border-radius: 4px; margin-top: 10px"></div></div>
+              <div style="height: 82px; background: #1B1A13; border: 1px solid #2C2A1E; border-radius: 10px; padding: 10px; box-sizing: border-box"><div style="width: 65%; height: 6px; background: #3A3727; border-radius: 4px"></div><div style="width: 90%; height: 4px; background: #2C2A1E; border-radius: 4px; margin-top: 10px"></div></div>
+              <div style="height: 82px; background: #1B1A13; border: 1px solid #2C2A1E; border-radius: 10px; padding: 10px; box-sizing: border-box"><div style="width: 45%; height: 6px; background: #3A3727; border-radius: 4px"></div><div style="width: 70%; height: 4px; background: #2C2A1E; border-radius: 4px; margin-top: 10px"></div></div>
+            </div>
+          </div>
+          <div style="padding: 18px 14px 12px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <img src="/img/forklift-icon.png" alt="" style="width: 32px; height: 32px; border-radius: 9px">
+              <h3 style="margin: 0; flex: 1 1 auto; font-size: 21px; font-weight: 600; letter-spacing: -0.02em">ForkLift</h3>
+              <a href="https://github.com/Cyberhex1/forkvlift" title="ForkLift on GitHub" style="display: inline-flex; align-items: center; gap: 6px; font-family: 'Geist Mono', monospace; font-size: 11px; color: #B9A2FF; border: 1px solid rgba(185,162,255,0.35); border-radius: 999px; padding: 3px 9px; text-decoration: none"><span style="width: 6px; height: 6px; border-radius: 50%; background: #B9A2FF"></span>v1.0 ↗</a>
+            </div>
+            <p style="margin: 0; font-size: 15px; color: #A09BAE">A free catalog of vibe-coded projects you can fork instead of rebuilding. Browse by category, save to your Studio board and follow builders.</p>
+            <p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 12px; color: #8A859C"><span style="color: #B9A2FF">Launching soon</span> · Web · React + Hono · All on Cloudflare</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 12px; font-size: 14px">
+              <a href="https://forklift.stream" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; background: #F2EFF7; color: #09080D; text-decoration: none; font-weight: 500; border-radius: 999px">Visit ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="proj" data-cats="apps" style="display: contents">
+        <article style="background: #111019; border: 1px solid #22202B; border-radius: 22px; padding: 10px; display: flex; flex-direction: column">
+          <div role="img" aria-label="SysPeek app window showing usage meters and startup apps" style="position: relative; height: 236px; border-radius: 14px; overflow: hidden; background: #0C0E1C">
+            <div aria-hidden="true" style="position: absolute; inset: 0; background: radial-gradient(70% 70% at 70% 20%, rgba(185,162,255,0.22), rgba(185,162,255,0))"></div>
+            <div style="position: absolute; left: 22px; right: 22px; top: 24px; bottom: -14px; background: #13162A; border: 1px solid #2A2E48; border-radius: 12px; overflow: hidden">
+              <div style="height: 28px; display: flex; align-items: center; gap: 6px; padding: 0 12px; border-bottom: 1px solid #22263E"><span style="width: 7px; height: 7px; border-radius: 50%; background: #3A3F5E"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #3A3F5E"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #3A3F5E"></span><span style="margin-left: 8px; font-family: 'Geist Mono', monospace; font-size: 10px; color: #A9ADC8">SysPeek</span></div>
+              <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; padding: 12px">
+                <div style="background: #1A1E34; border-radius: 8px; padding: 8px"><p style="margin: 0 0 6px; font-family: 'Geist Mono', monospace; font-size: 9px; color: #A9ADC8">CPU</p><div style="height: 4px; background: #262B47; border-radius: 4px"><div style="width: 34%; height: 4px; background: #B9A2FF; border-radius: 4px"></div></div></div>
+                <div style="background: #1A1E34; border-radius: 8px; padding: 8px"><p style="margin: 0 0 6px; font-family: 'Geist Mono', monospace; font-size: 9px; color: #A9ADC8">GPU</p><div style="height: 4px; background: #262B47; border-radius: 4px"><div style="width: 68%; height: 4px; background: #FF5FA8; border-radius: 4px"></div></div></div>
+                <div style="background: #1A1E34; border-radius: 8px; padding: 8px"><p style="margin: 0 0 6px; font-family: 'Geist Mono', monospace; font-size: 9px; color: #A9ADC8">RAM</p><div style="height: 4px; background: #262B47; border-radius: 4px"><div style="width: 52%; height: 4px; background: #4EF0C0; border-radius: 4px"></div></div></div>
+                <div style="background: #1A1E34; border-radius: 8px; padding: 8px"><p style="margin: 0 0 6px; font-family: 'Geist Mono', monospace; font-size: 9px; color: #A9ADC8">DISK</p><div style="height: 4px; background: #262B47; border-radius: 4px"><div style="width: 22%; height: 4px; background: #FFD74A; border-radius: 4px"></div></div></div>
+              </div>
+              <div style="padding: 0 12px; font-size: 11px; color: #D5D8EC">
+                <p style="margin: 0 0 4px; font-family: 'Geist Mono', monospace; font-size: 9px; color: #A9ADC8">STARTUP APPS</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-top: 1px solid #22263E"><span>Steam</span><span style="width: 24px; height: 13px; border-radius: 999px; background: #B9A2FF; display: flex; justify-content: flex-end; padding: 2px; box-sizing: border-box"><span style="width: 9px; height: 9px; border-radius: 50%; background: #13162A"></span></span></div>
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-top: 1px solid #22263E"><span>Discord</span><span style="width: 24px; height: 13px; border-radius: 999px; background: #2E3352; display: flex; padding: 2px; box-sizing: border-box"><span style="width: 9px; height: 9px; border-radius: 50%; background: #8B90B0"></span></span></div>
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-top: 1px solid #22263E"><span>Updater</span><span style="width: 24px; height: 13px; border-radius: 999px; background: #2E3352; display: flex; padding: 2px; box-sizing: border-box"><span style="width: 9px; height: 9px; border-radius: 50%; background: #8B90B0"></span></span></div>
+              </div>
+            </div>
+          </div>
+          <div style="padding: 18px 14px 12px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <span style="width: 32px; height: 32px; border-radius: 9px; background: #1A1E34; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 26 26" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="#B9A2FF" stroke-width="2.2"></circle><line x1="16" y1="16" x2="22" y2="22" stroke="#B9A2FF" stroke-width="2.6" stroke-linecap="round"></line></svg></span>
+              <h3 style="margin: 0; flex: 1 1 auto; font-size: 21px; font-weight: 600; letter-spacing: -0.02em">SysPeek</h3>
+              <a href="https://github.com/Cyberhex1" title="SysPeek on GitHub" style="display: inline-flex; align-items: center; gap: 6px; font-family: 'Geist Mono', monospace; font-size: 11px; color: #FFD74A; border: 1px solid rgba(255,215,74,0.35); border-radius: 999px; padding: 3px 9px; text-decoration: none"><span style="width: 6px; height: 6px; border-radius: 50%; background: #FFD74A"></span>v1.0 ↗</a>
+            </div>
+            <p style="margin: 0; font-size: 15px; color: #A09BAE">A lightweight Windows peek at startup apps and CPU, GPU, memory and disk use, plus a security check and a safe debloat.</p>
+            <p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 12px; color: #8A859C"><span style="color: #FFD74A">Release prep</span> · Windows 10/11 · Installer or portable</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 12px; font-size: 14px">
+              <a href="/syspeek" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #2E2B38; color: #F2EFF7; text-decoration: none; font-weight: 500; border-radius: 999px">Details</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="proj" data-cats="apps" style="display: contents">
+        <article style="background: #111019; border: 1px solid #22202B; border-radius: 22px; padding: 10px; display: flex; flex-direction: column">
+          <div role="img" aria-label="LocalFaves window listing saved dev sites, each with its own port block and a launch button" style="position: relative; height: 236px; border-radius: 14px; overflow: hidden; background: #150A18">
+            <div aria-hidden="true" style="position: absolute; inset: 0; background: radial-gradient(70% 70% at 75% 75%, rgba(255,95,168,0.2), rgba(255,95,168,0))"></div>
+            <div style="position: absolute; left: 22px; right: 22px; top: 24px; background: #1B0F20; border: 1px solid #3A2440; border-radius: 12px; overflow: hidden">
+              <div style="height: 28px; display: flex; align-items: center; padding: 0 12px; border-bottom: 1px solid #2E1C34; font-family: 'Geist Mono', monospace; font-size: 10px; color: #D6B9D9">LocalFaves · saved sites</div>
+              <div style="display: flex; align-items: center; gap: 10px; padding: 11px 12px; border-bottom: 1px solid #2E1C34"><span style="flex: 1 1 auto; font-size: 12px; color: #F4E6F4">candied</span><span style="font-family: 'Geist Mono', monospace; font-size: 10px; color: #FF9CC8; border: 1px solid #5A2E52; border-radius: 6px; padding: 2px 6px">:3087–3091</span><span style="width: 22px; height: 22px; border-radius: 50%; background: #FF5FA8; display: flex; align-items: center; justify-content: center"><svg width="8" height="9" viewBox="0 0 8 9" aria-hidden="true"><polygon points="1,0.5 7.5,4.5 1,8.5" fill="#150A18"></polygon></svg></span></div>
+              <div style="display: flex; align-items: center; gap: 10px; padding: 11px 12px; border-bottom: 1px solid #2E1C34"><span style="flex: 1 1 auto; font-size: 12px; color: #F4E6F4">olympia</span><span style="font-family: 'Geist Mono', monospace; font-size: 10px; color: #FF9CC8; border: 1px solid #5A2E52; border-radius: 6px; padding: 2px 6px">:3092–3096</span><span style="width: 22px; height: 22px; border-radius: 50%; border: 1px solid #5A2E52; display: flex; align-items: center; justify-content: center"><svg width="8" height="9" viewBox="0 0 8 9" aria-hidden="true"><polygon points="1,0.5 7.5,4.5 1,8.5" fill="#FF9CC8"></polygon></svg></span></div>
+              <div style="display: flex; align-items: center; gap: 10px; padding: 11px 12px"><span style="flex: 1 1 auto; font-size: 12px; color: #F4E6F4">forklift</span><span style="font-family: 'Geist Mono', monospace; font-size: 10px; color: #FF9CC8; border: 1px solid #5A2E52; border-radius: 6px; padding: 2px 6px">:3097–3101</span><span style="width: 22px; height: 22px; border-radius: 50%; border: 1px solid #5A2E52; display: flex; align-items: center; justify-content: center"><svg width="8" height="9" viewBox="0 0 8 9" aria-hidden="true"><polygon points="1,0.5 7.5,4.5 1,8.5" fill="#FF9CC8"></polygon></svg></span></div>
+            </div>
+          </div>
+          <div style="padding: 18px 14px 12px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <span style="width: 32px; height: 32px; border-radius: 9px; background: #2A1230; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13.5 C3 10 1.5 7.5 1.5 5.2 C1.5 3.3 3 2 4.7 2 C6 2 7.2 2.8 8 4 C8.8 2.8 10 2 11.3 2 C13 2 14.5 3.3 14.5 5.2 C14.5 7.5 13 10 8 13.5 Z" fill="#FF5FA8"></path></svg></span>
+              <h3 style="margin: 0; flex: 1 1 auto; font-size: 21px; font-weight: 600; letter-spacing: -0.02em">LocalFaves</h3>
+              <a href="https://github.com/Cyberhex1" title="LocalFaves on GitHub" style="display: inline-flex; align-items: center; gap: 6px; font-family: 'Geist Mono', monospace; font-size: 11px; color: #FFD74A; border: 1px solid rgba(255,215,74,0.35); border-radius: 999px; padding: 3px 9px; text-decoration: none"><span style="width: 6px; height: 6px; border-radius: 50%; background: #FFD74A"></span>v1.0 ↗</a>
+            </div>
+            <p style="margin: 0; font-size: 15px; color: #A09BAE">Saves your local dev sites and relaunches server and site in one click. Each project gets its own five ports to hand to your AI agents.</p>
+            <p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 12px; color: #8A859C"><span style="color: #FFD74A">In progress</span> · Desktop app · Dev tooling</p>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="crew" style="border-top: 1px solid #1C1A24; background: #0C0B12">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 104px 32px">
+      <p style="margin: 0 0 12px; font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #8A859C">02 — HOW I BUILD</p>
+      <h2 style="margin: 0; font-size: 44px; line-height: 1.05; letter-spacing: -0.04em; font-weight: 600">One human, a crew of AIs</h2>
+      <p style="margin: 18px 0 48px; max-width: 580px; font-size: 17px; color: #A09BAE">I set the direction and play-test everything. Each AI owns a lane, work runs in planned batches, and we debrief once the batch is done.</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px">
+        <div style="background: #111019; border: 1px solid #22202B; border-radius: 20px; padding: 26px">
+          <div style="width: 40px; height: 40px; border-radius: 12px; background: rgba(255,95,168,0.12); display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5" fill="none" stroke="#FF5FA8" stroke-width="1.6"></circle><polygon points="10,5 12,10 10,15 8,10" fill="#FF5FA8"></polygon></svg></div>
+          <p style="margin: 20px 0 0; font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: #FF8BBF">DIRECTOR</p>
+          <h3 style="margin: 4px 0 8px; font-size: 22px; font-weight: 600; letter-spacing: -0.02em">Claude</h3>
+          <p style="margin: 0; font-size: 15px; color: #A09BAE">Plans the systems, writes the story, keeps canon straight, reviews the work and takes the hard bugs.</p>
+        </div>
+        <div style="background: #111019; border: 1px solid #22202B; border-radius: 20px; padding: 26px">
+          <div style="width: 40px; height: 40px; border-radius: 12px; background: rgba(78,240,192,0.12); display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 6 L3 10 L7 14 M13 6 L17 10 L13 14" fill="none" stroke="#4EF0C0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          <p style="margin: 20px 0 0; font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: #4EF0C0">BUILDERS</p>
+          <h3 style="margin: 4px 0 8px; font-size: 22px; font-weight: 600; letter-spacing: -0.02em">Antigravity + Gemini</h3>
+          <p style="margin: 0; font-size: 15px; color: #A09BAE">Implement the features in parallel: saves, quest and dialogue systems, UI behavior.</p>
+        </div>
+        <div style="background: #111019; border: 1px solid #22202B; border-radius: 20px; padding: 26px">
+          <div style="width: 40px; height: 40px; border-radius: 12px; background: rgba(255,215,74,0.12); display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 16 L12 8 M12 8 L15 4 L16 5 L12 9 Z M4 16 L3.5 17" fill="none" stroke="#FFD74A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+          <p style="margin: 20px 0 0; font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: #FFD74A">ARTIST</p>
+          <h3 style="margin: 4px 0 8px; font-size: 22px; font-weight: 600; letter-spacing: -0.02em">ChatGPT + Codex</h3>
+          <p style="margin: 0; font-size: 15px; color: #A09BAE">Turn my concept art into sprites, maps and UI art.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="log" style="border-top: 1px solid #1C1A24">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 104px 32px; display: flex; flex-wrap: wrap; gap: 56px">
+      <div style="flex: 1 1 300px">
+        <p style="margin: 0 0 12px; font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #8A859C">03 — LOG</p>
+        <h2 style="margin: 0; font-size: 44px; line-height: 1.05; letter-spacing: -0.04em; font-weight: 600">Small notes, often</h2>
+        <p style="margin: 18px 0 0; font-size: 17px; color: #A09BAE">Two or three lines per entry. No essays required.</p>
+      </div>
+      <ol style="flex: 999 1 560px; min-width: 0; list-style: none; margin: 0; padding: 0">
+        <li style="display: flex; flex-wrap: wrap; gap: 6px 28px; padding: 22px 0; border-top: 1px solid #1F1D28">
+          <span style="flex: 0 0 110px; font-family: 'Geist Mono', monospace; font-size: 13px; color: #8A859C">Oct 29</span>
+          <div style="flex: 1 1 320px"><p style="margin: 0; font-weight: 500; font-size: 17px"><span style="color: #4EF0C0">Releases</span> · seven in one night</p><p style="margin: 4px 0 0; font-size: 15px; color: #A09BAE">Roll Zero0, Olympia, The Hook-Up, TokTV and WishlistMarket all hit 1.0, JobSweep shipped its first build, and StreamFix reached 0.2 with one app for both the PC and the Deck.</p></div>
+        </li>
+        <li style="display: flex; flex-wrap: wrap; gap: 6px 28px; padding: 22px 0; border-top: 1px solid #1F1D28">
+          <span style="flex: 0 0 110px; font-family: 'Geist Mono', monospace; font-size: 13px; color: #8A859C">Earlier</span>
+          <div style="flex: 1 1 320px"><p style="margin: 0; font-weight: 500; font-size: 17px"><span style="color: #B9A2FF">SysPeek</span> · cut the usage history</p><p style="margin: 4px 0 0; font-size: 15px; color: #A09BAE">Keeping it light. Zip and installer releases next.</p></div>
+        </li>
+        <li style="display: flex; flex-wrap: wrap; gap: 6px 28px; padding: 22px 0; border-top: 1px solid #1F1D28; border-bottom: 1px solid #1F1D28">
+          <span style="flex: 0 0 110px; font-family: 'Geist Mono', monospace; font-size: 13px; color: #8A859C">Earlier</span>
+          <div style="flex: 1 1 320px"><p style="margin: 0; font-weight: 500; font-size: 17px"><span style="color: #FFD74A">Candied</span> · Chapter 1 rebuilt</p><p style="margin: 4px 0 0; font-size: 15px; color: #A09BAE">Played the chapter as a roleplay first, then rebuilt the story from it.</p></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <footer id="contact" style="border-top: 1px solid #1C1A24; position: relative; overflow: hidden">
+    <div aria-hidden="true" style="position: absolute; left: 50%; bottom: -260px; width: 900px; height: 520px; margin-left: -450px; background: radial-gradient(closest-side, rgba(255,95,168,0.14), rgba(255,95,168,0))"></div>
+    <div style="position: relative; max-width: 1240px; margin: 0 auto; padding: 120px 32px 48px; text-align: center">
+      <h2 style="margin: 0 auto; max-width: 760px; font-size: clamp(36px, 5vw, 60px); line-height: 1.05; letter-spacing: -0.045em; font-weight: 600">Want to play-test something? <span style="color: #FF5FA8">Say hi.</span></h2>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 36px; font-size: 15px">
+        <a href="https://github.com/Cyberhex1" style="display: inline-flex; align-items: center; min-height: 46px; padding: 0 22px; background: #F2EFF7; color: #09080D; text-decoration: none; font-weight: 500; border-radius: 999px">Find me on GitHub ↗</a>
+        </div>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin-top: 104px; padding-top: 22px; border-top: 1px solid #1C1A24; font-family: 'Geist Mono', monospace; font-size: 12px; color: #8A859C">
+        <span>© 2026 Ohnna</span><span>Hosted on Cloudflare Pages</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<script>
+(function () {
+  var chips = document.querySelectorAll('[data-filter]');
+  var cards = document.querySelectorAll('.proj');
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      var f = chip.getAttribute('data-filter');
+      chips.forEach(function (c) {
+        var on = c === chip;
+        c.setAttribute('aria-pressed', on ? 'true' : 'false');
+        c.style.background = on ? '#F2EFF7' : 'transparent';
+        c.style.color = on ? '#09080D' : '#A09BAE';
+        c.style.fontWeight = on ? '500' : '400';
+      });
+      cards.forEach(function (card) {
+        var cats = card.getAttribute('data-cats').split(' ');
+        card.style.display = (f === 'all' || cats.indexOf(f) !== -1) ? 'contents' : 'none';
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
