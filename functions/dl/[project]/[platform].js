@@ -14,7 +14,12 @@ const PROJECTS = {
     steamdeck: [/steamdeck.*\.tar\.gz$/i, 'StreamFix-0.2.0-steamdeck-linux-x64.tar.gz'] } },
   toktv: { repo: 'Cyberhex1/TokTV', files: { apk: [/\.apk$/i, 'TokTV.apk'] } },
   jobsweep: { repo: 'Cyberhex1/jobsweep-app', files: { windows: [/\.exe$/i, 'JobSweep-Setup-0.0.1.exe'] } },
-  syspeek: { repo: null, files: { installer: [/setup.*\.exe$/i, null], portable: [/\.zip$/i, null] } },
+  syspeek: { repo: 'Cyberhex1/SysPeek', files: {
+    installer: [/setup\.exe$/i, 'SysPeek-1.1.0-setup.exe'],
+    portable: [/win-x64\.zip$/i, 'SysPeek-1.1.0-win-x64.zip'] } },
+  localfaves: { repo: 'Cyberhex1/localfaves', files: {
+    windows: [/setup.*\.exe$/i, 'LocalFaves-Setup-1.0.0.exe'],
+    portable: [/portable.*\.zip$/i, 'LocalFaves-1.0.0-portable-x64.zip'] } },
 };
 
 const notYet = (name) => new Response(
