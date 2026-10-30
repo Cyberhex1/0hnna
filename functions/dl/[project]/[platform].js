@@ -13,6 +13,9 @@ const PROJECTS = {
     windows: [/windows.*\.zip$/i, 'StreamFix-0.2.0-windows-x64.zip'],
     steamdeck: [/steamdeck.*\.tar\.gz$/i, 'StreamFix-0.2.0-steamdeck-linux-x64.tar.gz'] } },
   toktv: { repo: 'Cyberhex1/TokTV', files: { apk: [/\.apk$/i, 'TokTV.apk'] } },
+  'zero-browser': { repo: 'Cyberhex1/tv-browser', files: {
+    '32bit': [/^[A-Za-z]+-armeabi-v7a\.apk$/i, 'ZeroBrowser-armeabi-v7a.apk'],
+    '64bit': [/^[A-Za-z]+-arm64-v8a\.apk$/i, 'ZeroBrowser-arm64-v8a.apk'] } },
   jobsweep: { repo: 'Cyberhex1/jobsweep-app', files: { windows: [/\.exe$/i, 'JobSweep-Setup-0.0.1.exe'] } },
   syspeek: { repo: 'Cyberhex1/SysPeek', files: {
     installer: [/setup\.exe$/i, 'SysPeek-1.1.0-setup.exe'],
